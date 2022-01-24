@@ -2,34 +2,37 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import LandingImage from '../../assets/Images/LandingImage.png';
-
+import '../../styles/main.scss';
+import LandingImage1 from '../../assets/Images/LandingImage1.png';
+import LandingImage2 from '../../assets/Images/LandingImage2.png';
+import LandingImage3 from '../../assets/Images/LandingImage3.png';
 
 class ImageGallaryComponent extends React.Component {
     render() {
         return (
-            <div>
+            <>
                 <Carousel
                   autoPlay
         infiniteLoop
         interval={6000}
         showThumbs={false}
         showStatus={false}
-        showArrows={false}>
-                    <div>
-                        <img src={LandingImage} />
-                        <p className="legend">My Classic Still 1</p>
+        showArrows={false}
+        className="carousel-banner">
+                    <div   id="banner-container">
+                        <img src={LandingImage1} alt="LandingImage" />
+                        <div id="banner-text">My Classic Still 1</div>
                     </div>
-                    <div>
-                        <img src="https://picsum.photos/700/400?img=2" />
+                    <div   id="banner-container">
+                        <img src={LandingImage2}  alt="LandingImage" />
                         <p className="legend">My Classic Still 2</p>
                     </div>
-                    <div>
-                        <img src="https://picsum.photos/700/400?img=3" />
+                    <div  id="banner-container">
+                        <img src={LandingImage3}  alt="LandingImage"/>
                         <p className="legend">My Classic Still 3</p>
                     </div>
                 </Carousel>
-            </div>
+            </>
         )
     };
 }
