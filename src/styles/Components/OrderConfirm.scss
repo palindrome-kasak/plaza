@@ -1,0 +1,31 @@
+#orderConfirmMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 47px;
+    margin-bottom: 147px;
+    margin-left: 484px;
+    margin-right: 484px;
+}
+#OrderCenterContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 46px;  
+}
+#OrderConfirmText{
+    font-family: $font-style-2;
+font-size: 45px;
+font-weight: 500;
+color: $black;
+padding-bottom: 60px;
+}
+#successfulText{
+    font-family: $font-style-1;
+font-size: 25px;
+font-weight: 400;
+color: $black;
+padding-top: 20px;
+}
