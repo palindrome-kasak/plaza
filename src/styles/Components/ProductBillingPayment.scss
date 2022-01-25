@@ -1,0 +1,72 @@
+#productBillingMain{
+    // margin-left: 180px;
+    // margin-right: 155px;
+    margin-bottom: 187px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+#row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 2;
+}
+#buttonBox{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+    width: 100%;
+    padding-left: 387px;
+}
+#ProceedToPay{
+    height: 48px;
+width: 335px;
+left: 950px;
+top: 596px;
+border-radius: 4px;
+background-color: $red;
+color:$white;
+border: 0px;
+border-color: $red;
+}
+#methodTextHeading{
+    font-family: $font-style-2;
+font-size: 30px;
+font-weight: 500;
+color: $black;
+padding-top: 46px;
+
+}
+.methodSelectionRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+.cardText{
+    font-family: $font-style-2;
+font-size: 24px;
+font-weight: 500;
+}
+#methodBox{
+    padding-top: 41px;
+}
+#methodSelectionLastRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 36px;
+}
+.checkbox{
+    height: 17px;
+width: 17px;
+left: 550px;
+top: 399px;
+border-radius: 2px;
+border: 1px solid $black;
+box-sizing: border-box;
+
+}

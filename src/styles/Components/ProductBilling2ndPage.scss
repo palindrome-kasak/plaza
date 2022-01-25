@@ -1,0 +1,89 @@
+#productBillingMain{
+    margin-left: 180px;
+    margin-right: 155px;
+    margin-bottom: 145px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+#row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 2;
+}
+#productForm{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#buttonBox{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+    width: 100%;
+    padding-left: 293px;
+}
+#FullName{
+    height: 56px;
+width: 477px;
+border-radius: 10px;
+background-color: $grey-light;
+border-color: $grey-light;
+border: 0px;
+font-family: $font-style-1;
+font-size: 16px;
+font-weight: 400;
+padding-left: 21px;
+color: $grey-dark;
+
+}
+#email{
+    height: 56px;
+    width: 477px;
+    border-radius: 10px;
+    background-color: $grey-light;
+border-color: $grey-light;
+border: 0px;
+padding-left: 21px;
+color: $grey-dark;
+    
+}
+#phoneNumber{
+    height: 56px;
+    width: 477px;
+    border-radius: 10px;
+    background-color: $grey-light;
+border-color: $grey-light;
+border: 0px;
+padding-left: 21px;
+color: $grey-dark;
+    
+}
+#address{
+    height: 212px;
+    width: 477px;
+    left: 180px;
+    top: 432px;
+    border-radius: 10px;
+    background-color: $grey-light;
+border-color: $grey-light;
+border: 0px;
+padding-left: 21px;
+color: $grey-dark;
+}
+.inputBox{
+    padding-top: 24px;
+}
+#ProceedToPay{
+    height: 48px;
+width: 335px;
+left: 950px;
+top: 596px;
+border-radius: 4px;
+background-color: $red;
+color:$white;
+border: 0px;
+border-color: $red;
+}
