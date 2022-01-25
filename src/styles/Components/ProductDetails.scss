@@ -1,0 +1,146 @@
+#rowBox{
+    display: flex;
+    flex-direction: row;
+}
+#mainBox{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    margin-top: 67px;
+    margin-right: 180px;
+    margin-left: 70px;
+    margin-bottom: 146px;
+}
+#productImage{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+#productDetail{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+#row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#productDetailHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: $font-style-2;
+font-size: 20px;
+font-weight: 500;
+color: $black;
+padding-top: 28px;
+
+}
+#creedProductHeading{
+    font-family: $font-style-2;
+font-size: 30px;
+font-weight: 500;
+color: $black;
+}
+#ProductLightText{
+    font-family: $font-style-1;
+font-size: 20px;
+font-weight: 400;
+color: $grey-dark;
+padding-top: 8px;
+}
+#AddToCartButton{
+    height: 40px;
+    width: 139px;
+    left: 708px;
+    top: 350px;
+    border-radius: 4px;    
+font-family: $font-style-2;
+font-size: 22px;
+font-weight: 500;
+background-color: $red;
+color: $white;
+border-color: $red;
+border-width: 0px;
+padding-left: 7px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+#pincodeInput{
+    height: 32px;
+width: 191px;
+left: 707px;
+top: 416px;
+border-radius: 4px;
+background-color: $grey-light;
+border-color: $grey-light;
+border-width: 0px;
+font-family: $font-style-1;
+font-size: 15px;
+font-weight: 400;
+color: $grey-dark;
+padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+}
+#productDiscription{
+    font-family: $font-style-1;
+font-size: 20px;
+font-weight: 400;
+color: $grey-dark;
+padding-top: 28px;
+}
+#AddCartButtonBox{
+    padding-top: 52px;
+}
+#PincodeInputBox{
+    padding-top: 26px;
+}
+#incrementBox{
+padding-top: 43px;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+#SmallProductPicture{
+height: 84px;
+width: 84px;
+border: 1px solid #C1C1C1;
+box-sizing: border-box;
+border-radius: 4px;
+}
+#smallImageMainBox{
+    display: flex;
+    flex-direction: row;
+}
+#smallImageBox{
+padding-left: 17px;
+}
+#saveAndShareBox{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    padding-right: 84px;
+    padding-bottom: 22px;
+    padding-top: 22px;
+
+}
+#ProductShareIcon{
+    padding-left: 19px;
+}
+#largeProductimage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#ProductDetailPicture{
+    height: 366px;
+width: 366px;
+left: 136px;
+top: 146px;
+border-radius: 0px;
+
+}
