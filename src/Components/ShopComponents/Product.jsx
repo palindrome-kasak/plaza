@@ -16,7 +16,7 @@ const Product = () => {
     <div>Wanna be cool? Get this.<br></br> Trust us.</div>
 </div>
 <div className="button">
-<button className="Buy"><div className="buyText">Buy</div></button>
+<button className="Buy" ><div className="buyText">Buy</div></button>
 </div>
 </div>
     )

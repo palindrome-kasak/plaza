@@ -14,7 +14,7 @@ class ImageGallaryComponent extends React.Component {
                 <Carousel
                   autoPlay
         infiniteLoop
-        interval={6000}
+        interval={3000}
         showThumbs={false}
         showStatus={false}
         showArrows={false}
