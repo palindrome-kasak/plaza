@@ -1,8 +1,9 @@
 import React from 'react'
-import ProductPicture from '../../../assets/Images/WineGlass.png'
-import { Save, Share } from '../../../components/SvgComponents/svgs'
-import NextVector from '../../../assets/Images/NextVector.png'
-import Footer from '../../../components/FixedComponents/Footer'
+import ProductPicture from '../assets/Images/wineGlass.png'
+import { Save, Share } from '../Components/SvgComponents/svgs';
+import NextVector from '../assets/Images/NextVector.png';
+import Footer from '../Components/fixedComponents/Footer';
+
 const ProductDetails = () => {
     return (
         <> 
