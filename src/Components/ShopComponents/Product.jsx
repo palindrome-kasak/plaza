@@ -1,6 +1,7 @@
 import React from 'react';
 import "../../styles/main.scss";
 import WineGlass from '../../assets/Images/wineGlass.png'
+import { Link } from 'react-router-dom';
 
 const Product = () => {
     return(
@@ -16,7 +17,7 @@ const Product = () => {
     <div>Wanna be cool? Get this.<br></br> Trust us.</div>
 </div>
 <div className="button">
-<button className="Buy"><div className="buyText">Buy</div></button>
+<Link to="/productDetails" className="Buy" ><div className="buyText">Buy</div></Link>
 </div>
 </div>
     )
