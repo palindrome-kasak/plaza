@@ -35,7 +35,7 @@ const CartProduct = () => {
 
     return(
         <div className="cartProduct">
-<div id="first"> <img className="cartProductPicture" src={WineGlass} alt="img" /><div className="productName">Creed Chronicles</div></div>
+<div id="first"> <img className="cartProductPicture" src={WineGlass} alt="img" /><div className="productName">Plaza Chronicles</div></div>
 <div id="second">
 <div className="productPrice">$15</div>
 <div><ButtonIncrement onClickFunc={incrementCounter}/>

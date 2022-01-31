@@ -12,7 +12,7 @@ const Product = () => {
 </div>
 <div className="productText">
     <div className="Head">
-    <div className="chronicles_head">Creed Chronicles</div> <div className="priceTag">$15</div><br></br>
+    <div className="chronicles_head">Plaza Chronicles</div> <div className="priceTag">$15</div><br></br>
     </div>
     <div>Wanna be cool? Get this.<br></br> Trust us.</div>
 </div>
