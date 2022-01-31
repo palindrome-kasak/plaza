@@ -51,8 +51,8 @@ const ProductDetails = () => {
                 <div id="productDetail">
                     <div id="productText">
                         <div id="row">
-                            <div id="creedProductHeading">Creed Chronicles</div>
-                            <div id="creedProductHeading">$15</div>
+                            <div id="PlazaProductHeading">Plaza Chronicles</div>
+                            <div id="PlazaProductHeading">$15</div>
                         </div>
                         <div id="ProductLightText">Wanna be cool? Get this. Trust us.</div>
                     </div>
