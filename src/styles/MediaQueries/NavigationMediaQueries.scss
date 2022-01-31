@@ -1,0 +1,117 @@
+@media only screen and (max-width: 1100px) {
+
+    .navbar-links1:hover {
+        color: $black;
+    }
+
+    .main{
+        min-height: auto;
+        height:55px;
+        
+        .first{
+            height:auto;
+            width:32%;
+            max-width: 142px;
+
+            img{
+                height:100%;
+                width: 100%;
+            }
+        }
+
+        .second{
+            display: none;
+        }
+
+        .third{
+            width:60%;
+
+            .search-box-container{
+                width: 100% !important;
+                justify-content: flex-end;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .searchbox-input{
+                width:100%;
+            }
+
+            .profile{
+                height: 30px;
+                width: 30px;
+                margin-right: 6px;
+                img{
+                    height: 30px;
+                    width: 30px;
+                }
+
+                &:hover {
+                    border: solid 2px $white;
+                }
+            }
+
+            .active-profile{
+                height: 30px;
+                width: 30px;
+                margin-right: 6px;
+                img{
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+
+            .hamburger{
+                display: block;
+                width: 5%;
+                // height:21px;
+                padding-left: 2%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .hamburger-container{
+                    position: absolute;
+                    height: 100vh;
+                    width: 100vw;
+                    z-index: 3;
+                    background-color: #ffffff;
+                    top: 0px;
+                    left: 0px;
+                    padding: 3vh;
+                    box-sizing: border-box;
+                }
+
+                .hamburger-link-container{
+                    box-sizing: border-box;
+                    padding-left: 3%;
+                    height:60px;
+                    padding: 3% 3%;
+
+                    .link{
+                        padding :0px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .header{
+        height: 55px;
+        min-height: auto;
+
+        .logo{
+            height:auto !important;
+            width:32% !important;
+            max-width: 142px;
+            align-self: center;
+
+        }
+    }
+
+    #dropdown-container{
+        top:55px;
+        right:15px;
+    }
+
+}
