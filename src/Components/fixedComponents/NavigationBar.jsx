@@ -164,6 +164,17 @@ const Nav = (props) => {
           </div>
         </div>
         <div className="third">
+        <NavLink to="/cart">
+        <div className="navbar__cart">
+          <h3 className="cart__title">Cart</h3>
+          <img
+            className="cart__image"
+            src="https://image.flaticon.com/icons/svg/102/102276.svg"
+            alt="shopping cart"
+          />
+          <div className="cart__counter">1</div>
+        </div>
+      </NavLink>
           {/* <div style={{ width: "11vw" }} className="search-box-container">
             {search ? (
               <input
