@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1100px) {
+    #banner-container{
+        min-height: auto;
+        height:300px;
+        #banner-text{
+            padding-top: 130px;
+            padding-left: 50px;
+            font-size: 26px;
+            width: 80%;
+        }
+    }
+
+    .carousel-banner .carousel .control-dots .dot{
+        height:10px;
+        width: 10px;
+    }
+
+    .carousel-banner .carousel .control-dots{
+        left:40px;
+        bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #banner-container{
+        min-height: auto;
+        height:300px;
+        #banner-text{
+            padding-top: 130px;
+            padding-left: 30px;
+            font-size: 26px;
+            width: 80%;
+        }
+    }
+
+    .carousel-banner .carousel .control-dots .dot{
+        height:10px;
+        width: 10px;
+    }
+
+    .carousel-banner .carousel .control-dots{
+        left:20px;
+        bottom: 20px;
+    }
+}
+

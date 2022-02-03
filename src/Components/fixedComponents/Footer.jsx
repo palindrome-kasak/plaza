@@ -37,8 +37,8 @@ const Footer = (props) => {
                 <Link to="/shop">Shop</Link>
               </li>
               <li>
-                <Link to="/write_for_creed/creed/write-for-creed/key=0.17995324958427751631214571804">
-                  Write for Creed
+                <Link to="/write_for_Plaza/Plaza/write-for-Plaza/key=0.17995324958427751631214571804">
+                  Write for Plaza
                 </Link>
               </li>
               <li>
@@ -57,7 +57,7 @@ const Footer = (props) => {
                 <Link to="/product">Products</Link>
               </li>
               <li>
-                <Link to="/connect">Connect</Link>
+                <Link to="/cart">Cart</Link>
               </li>
             </ul>
           {/* )} */}
@@ -89,7 +89,7 @@ const Footer = (props) => {
           <div className="IConRowSection">
             <div className="footerIcon">
               <a
-                href="https://www.facebook.com/creedessential/ "
+                href="https://www.facebook.com/Plazaessential/ "
                 target="_blank"
               >
                 <FbFooter />
@@ -97,7 +97,7 @@ const Footer = (props) => {
             </div>
             <div className="footerIcon">
               <a
-                href="https://www.instagram.com/creedessential/?hl=en"
+                href="https://www.instagram.com/Plazaessential/?hl=en"
                 target="_blank"
               >
                 <InstaFooter />
@@ -105,7 +105,7 @@ const Footer = (props) => {
             </div>
             <div className="footerIcon">
               <a
-                href="https://twitter.com/creedessential?lang=en"
+                href="https://twitter.com/Plazaessential?lang=en"
                 target="_blank"
               >
                 <TwitterFooter />
@@ -113,7 +113,7 @@ const Footer = (props) => {
             </div>
             <div className="footerIcon">
               <a
-                href="https://www.linkedin.com/company/creed-essential/"
+                href="https://www.linkedin.com/company/Plaza-essential/"
                 target="_blank"
               >
                 <LinkedIn />
