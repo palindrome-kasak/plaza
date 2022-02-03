@@ -57,7 +57,7 @@ const Footer = (props) => {
                 <Link to="/product">Products</Link>
               </li>
               <li>
-                <Link to="/connect">Connect</Link>
+                <Link to="/cart">Cart</Link>
               </li>
             </ul>
           {/* )} */}

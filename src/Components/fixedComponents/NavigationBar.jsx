@@ -150,8 +150,8 @@ const Nav = (props) => {
             style={{ width: "6vw", height: 40, display: "inline-block" }}
             align="center"
           >
-            <NavLink activeClassName="link1" className="link" to="/connect">
-              Connect
+            <NavLink activeClassName="link1" className="link" to="/cart">
+              Cart
             </NavLink>
           </div>
           <div
