@@ -19,6 +19,9 @@ exports.register = (req, res) => {
   });
 };
 
+
+
+
 // LOGIN FUNCTION
 exports.login = (req, res) => {
   let errors = validationResult(req);
