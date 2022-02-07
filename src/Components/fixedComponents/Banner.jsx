@@ -21,15 +21,15 @@ class ImageGallaryComponent extends React.Component {
         className="carousel-banner">
                     <div   id="banner-container">
                         <img src={LandingImage1} alt="LandingImage" />
-                        <p className="legend">My Classic Still 1</p>
+                        <p className="legend">plaza industry</p>
                     </div>
                     <div   id="banner-container">
                         <img src={LandingImage2}  alt="LandingImage" />
-                        <p className="legend">My Classic Still 2</p>
+                        <p className="legend">plaza industry</p>
                     </div>
                     <div  id="banner-container">
                         <img src={LandingImage3}  alt="LandingImage"/>
-                        <p className="legend">My Classic Still 3</p>
+                        <p className="legend">plaza industry</p>
                     </div>
                 </Carousel>
             </>
