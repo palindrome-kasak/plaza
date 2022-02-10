@@ -21,8 +21,17 @@ const Product = ({ product, addToCart, loadCurrentItem }) => {
     <div>{product.description}</div>
 </div>
 <div className="button">
-{/* <Link to="/productDetails" className="Buy" ><div className="buyText">Buy</div></Link> */}
-<button className="Buy"onClick={() => addToCart(product.id)}><div className="buyText">Buy</div></button>
+ 
+ <Link to={`/productDetails/${product.id}`} className="Buy" >
+   
+          <button
+            onClick={() => loadCurrentItem(product)}
+            
+          >
+          <div className="buyText">Buy</div>
+          </button>
+        </Link>
+
 </div>
 </div>
     )
