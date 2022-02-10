@@ -3,8 +3,12 @@ import ProductPicture from '../assets/Images/wineGlass.png'
 import { Save, Share } from '../Components/SvgComponents/svgs';
 import NextVector from '../assets/Images/NextVector.png';
 import Footer from '../Components/fixedComponents/Footer';
-
-const ProductDetails = () => {
+import { connect } from "react-redux";
+import {
+  loadCurrentItem,
+  addToCart,
+} from "../Redux/Shopping/Actions";
+const ProductDetails = ({ current, addToCart }) => {
     return (
         <> 
         <div id="mainBox">
@@ -51,8 +55,8 @@ const ProductDetails = () => {
                 <div id="productDetail">
                     <div id="productText">
                         <div id="row">
-                            <div id="PlazaProductHeading">Plaza Chronicles</div>
-                            <div id="PlazaProductHeading">$15</div>
+                            <div id="PlazaProductHeading">{current.title}</div>
+                            <div id="PlazaProductHeading">{current.price}</div>
                         </div>
                         <div id="ProductLightText">Wanna be cool? Get this. Trust us.</div>
                     </div>
@@ -60,7 +64,7 @@ const ProductDetails = () => {
                         increement and decreement
                     </div>
                     <div id="AddCartButtonBox">
-                        <button id="AddToCartButton">Add to Cart</button>
+                        <button id="AddToCartButton" onClick={() => addToCart(current.id)}>Add to Cart</button>
                     </div>
                     <div id="PincodeInputBox">
                         <input type="text" placeholder="Pincode" id="pincodeInput" inputmode="numeric" maxlength="6" />
@@ -72,8 +76,7 @@ const ProductDetails = () => {
                             <div>Payment & Security</div>
                         </div>
                         <div id="productDiscription">
-                            Product description, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                             In tempor nibh et metus porttitor, vel molestie felis laoreet. Ut ac nisi et metus tempus ornare.
+                        {current.description}
                         </div>
                     </div>
                 </div>
@@ -86,4 +89,20 @@ const ProductDetails = () => {
     )
 }
 
-export default ProductDetails
+const mapStateToProps = (state) => {
+    return {
+      current: state.shop.currentItem,
+    };
+  };
+  
+  const mapDispatchToProps = (dispatch) => {
+    return {
+      addToCart: (id) => dispatch(addToCart(id)),
+    };
+  };
+  
+  export default connect(mapStateToProps, mapDispatchToProps)(ProductDetails);
+
+
+
+
