@@ -8,7 +8,7 @@ import Footer from "../src/Components/fixedComponents/Footer";
 import Product from "../src/Components/ShopComponents/Product";
 import ProductDetails from '../src/pages/ProductDetails';
 import { connect } from "react-redux";
-
+import Cart from "../src/pages/MyCartPage";
 function App({current}) {
   return (
     <div>
@@ -18,7 +18,7 @@ function App({current}) {
 
         <Route path="/home" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
-      
+        <Route path="/cart" element={<Cart />} />
         <Route path="/productDetails/:id" element={!current ? <Navigate to="/" /> : <ProductDetails/>} />
       </Routes>
      
