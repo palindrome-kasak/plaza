@@ -1,23 +1,28 @@
 import React from 'react';
 import Product from './Product';
 import "../../styles/main.scss";
-
-const TrendingSectionContainer = () => {
+import { connect } from "react-redux";
+const TrendingSectionContainer = ({products}) => {
   return <>
     <div id="shopScreenMainContainer">
         {/* <div className="shopImageContainer">
         </div> */}
         <div className="shop-container">
-             <div>{<Product/>}</div> 
-             <div>{<Product/>}</div> 
-             <div>{<Product/>}</div> 
-             <div>{<Product/>}</div> 
-             <div>{<Product/>}</div> 
-             <div>{<Product/>}</div> 
+        {products.map((product) => (
+        <Product key={product.id} product={product} />
+      ))}
                          </div>
             </div>
 
   </>;
 };
 
-export default TrendingSectionContainer;
+
+const mapStateToProps = (state) => {
+  return {
+    products: state.shop.products,
+  };
+};
+
+
+export default connect(mapStateToProps)(TrendingSectionContainer);

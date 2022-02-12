@@ -1,15 +1,15 @@
 import "./App.css";
 // import NavBar from '../src/Components/NavBar'
 import NavBar from "../src/Components/fixedComponents/NavigationBar";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes,Navigate } from "react-router-dom";
 import Home from "../src/pages/Home";
 import Shop from "../src/pages/Shop";
 import Footer from "../src/Components/fixedComponents/Footer";
 import Product from "../src/Components/ShopComponents/Product";
 import ProductDetails from '../src/pages/ProductDetails';
+import { connect } from "react-redux";
 
-
-function App() {
+function App({current}) {
   return (
     <div>
       <NavBar />
@@ -18,12 +18,19 @@ function App() {
 
         <Route path="/home" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/productDetails" element={<ProductDetails />} />
+      
+        <Route path="/productDetails/:id" element={!current ? <Navigate to="/" /> : <ProductDetails/>} />
       </Routes>
      
       
     </div>
   );
 }
+const mapStateToProps = (state) => {
+  return {
+    current: state.shop.currentItem,
+  };
+};
 
-export default App;
+export default connect(mapStateToProps)(App);
+

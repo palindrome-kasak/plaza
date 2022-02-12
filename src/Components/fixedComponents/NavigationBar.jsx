@@ -5,13 +5,13 @@ import { NavLink, useHistory } from "react-router-dom";
 import "../../styles/main.scss";
 
 import logo from '../../assets/Images/Logo1.png';
-
+import { connect } from "react-redux";
 // import { SearchIcon, BackIcon, HamburgerIcon } from "../SvgComponents/svgs";
 // import MyAccountDropDown from "../FixedComponents/MyAccountDropDown";
 // import { store } from "../../redux/Store/store";
 // import SignInPopUp from "../ReusableComponents/SignInPopUp";
 
-const Nav = (props) => {
+const Nav = ({ cart,user }) => {
 //   const strictVisible = props.strictVisible ? true : false;
 //   const [displayed, setIfDisplayed] = useState(false);
 //   const dropdownRef = useRef();
@@ -110,6 +110,17 @@ const Nav = (props) => {
 //       document.removeEventListener("mousedown", handleClickOutside);
 //     };
 //   }, [handleClickOutside]);
+const [cartCount, setCartCount] = useState(0);
+
+  useEffect(() => {
+    let count = 0;
+    cart.forEach((item) => {
+      count += item.qty;
+    });
+
+    setCartCount(count);
+  }, [cart, cartCount]);
+
 
   return (
     <>
@@ -161,6 +172,12 @@ const Nav = (props) => {
             {/* <NavLink activeClassName="link1" className="link" to="/shop">
               Shop
             </NavLink> */}
+          </div>
+          <div>
+            {/* <Link to="/cart"><FaShoppingCart  className={"profile icon-hover"}/> */}
+          <div className="cart__counter">{cartCount} cart</div>
+          {/* </Link> */}
+          
           </div>
         </div>
         <div className="third">
@@ -294,4 +311,12 @@ const Nav = (props) => {
   );
 };
 
-export default Nav;
+const mapStateToProps = (state) => {
+  return {
+    cart: state.shop.cart,
+  };
+};
+
+export default connect(mapStateToProps)(Nav);
+
+
