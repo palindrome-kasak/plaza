@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import "../../styles/main.scss";
-
+import Profile from "../../assets/Images/Profile.png";
 import logo from '../../assets/Images/Logo1.png';
 import { connect } from "react-redux";
 // import { SearchIcon, BackIcon, HamburgerIcon } from "../SvgComponents/svgs";
@@ -195,25 +195,29 @@ const [cartCount, setCartCount] = useState(0);
               <></>
             )}
           </div> */}
-          {/* <div className="search icon-hover" onClick={searchClickHandler}>
+           {/* <div className="search icon-hover" onClick={searchClickHandler}>
             {" "}
             <SearchIcon />{" "}
-          </div>
-          {currentState.loggedIn ? (
+          </div> */}
+          {/* {currentState.loggedIn ? ( */}
             <div
-              ref={profile}
+              // ref={profile}
               className={
-                displayed ? "active-profile icon-hover" : "profile icon-hover"
+                // displayed ? "active-profile icon-hover" : 
+                "profile icon-hover"
               }
             >
               <img
-                src={user.photoURL}
+                src={Profile}
                 alt="img"
                 style={{ objectPosition: "50% 50%", objectFit: "cover" }}
+                
               />
+        
+           
             </div>
-          ) : null}
-          {!currentState.loggedIn ? (
+          {/* ) : null} */}
+          {/* {!currentState.loggedIn ? (
             // <div className="SignInButton">Sign In</div>
             <div
               id="cafeButton"
@@ -230,8 +234,8 @@ const [cartCount, setCartCount] = useState(0);
                 Sign In
               </button>
             </div>
-          ) : null}
-          {signInPopUp ? (
+          ) : null} */}
+          {/* {signInPopUp ? (
             <SignInPopUp
               visible={signInPopUp}
               changeVisibility={openSignInPopUp}
@@ -239,32 +243,31 @@ const [cartCount, setCartCount] = useState(0);
             />
           ) : (
             <></>
-          )}
-          {displayed && currentState.loggedIn ? (
+          )} */}
+          {/* {displayed && currentState.loggedIn ? (
             <MyAccountDropDown
               ref={dropdownRef}
               visible={displayed}
               setVisibility={setIfDisplayed}
               className="dropdown-component"
             />
-          ) : null}
-          <div
-            className="hamburger"
-            onClick={() => {
-              setIfHamburgerDisplayed(true);
-            }}
-          > */}
-            {/* {hamburgerDisplayed? */}
-            {/* <HamburgerIcon />
-            <div
-              className="hamburger-container"
-              style={{
-                display: hamburgerDisplayed ? "block" : "none",
-                width: window.innerWidth,
-                height: window.innerHeight,
-              }}
-            >
-              <div ref={hamburger}>
+          ) : null} */}
+          {/* <div */}
+             {/* className="hamburger" */}
+             {/* onClick={() => { */}
+               {/* setIfHamburgerDisplayed(true); */}
+             {/* }}> */}
+             {/* {hamburgerDisplayed? */}
+             {/* <HamburgerIcon /> */}
+             {/* <div  */}
+             {/* className="hamburger-container" */}
+            {/* style={{ */}
+                {/* display: hamburgerDisplayed ? "block" : "none", */}
+                {/* width: window.innerWidth, */}
+                {/* height: window.innerHeight, */}
+               {/* }} */}
+             {/* > */}
+              {/* <div ref={hamburger}>
                 <div>
                   <div
                     align="center"
@@ -301,12 +304,12 @@ const [cartCount, setCartCount] = useState(0);
                 <div className="hamburger-link-container" id="HM5">
                   Shop
                 </div>
-              </div>
-            </div>
-            : <></>} */}
-          </div>
+              </div> */}
+            {/* </div> */}
+            {/* : <></> */}
+          {/* </div> */}
         </div>
-      {/* </div> */}
+      </div> 
     </>
   );
 };
