@@ -20,11 +20,12 @@ const Product = ({ product, addToCart, loadCurrentItem }) => {
     </div>
     <div>{product.description}</div>
 </div>
-<div className="button">
+<div className="button" >
  
- <Link to={`/productDetails/${product.id}`} className="Buy" >
+    
+ <Link to={`/productDetails/${product.id}`} style={{ textDecoration: "none"} }>
    
-          <button
+          <button className="Buy"
             onClick={() => loadCurrentItem(product)}
             
           >
