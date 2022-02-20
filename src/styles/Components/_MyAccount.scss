@@ -1,0 +1,105 @@
+.myAccount-container {
+    margin-top: 73px;
+    flex:1;
+    align-self: stretch;
+}
+
+#myAccount-box1 {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    font-family: $font-style-2;
+}
+
+#myAccount-box2 {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-box-outer{
+    border-bottom: 1px solid $grey-medium;
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        -webkit-text-fill-color: $black;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+}
+
+.myAccount-input-box {
+    width: 100%;
+    height : 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: $black;
+    font: 400 16px $font-style-1;
+    padding-left : 1px;
+    padding-bottom: 5px;
+
+}
+
+#myAccount-details-box {
+    display : flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 75px;
+}
+
+
+#confirm-change {
+    background-color: $white;
+    border : none;
+    color: $red;
+    font: 400 16px $font-style-1;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.cancel-change {
+    background-color: $white;
+    border : none;
+    color: $red;
+    font: 400 16px $font-style-1;
+    padding-left: 20px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+input[type=file]::file-selector-button {
+    height: 40px;
+    width: 103px;
+    left: 97px;
+    top: 3495px;
+    border-radius: 4px;
+    background: $red;
+    color : $white;
+    font-weight: 500;
+    // font-size: 25px;
+    font-family: $font-style-2;
+    outline: none;
+    border : none;
+  }
+
+#file-input {
+    color: $white;
+}
+
+
+input[type="file" i]#file-upload-button {
+    color : $white;
+    background-color: $red;
+}
