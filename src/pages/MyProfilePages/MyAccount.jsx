@@ -40,6 +40,7 @@ const MyAccount = () => {
     </div>
 
   </div>
+  
   )
 }
 

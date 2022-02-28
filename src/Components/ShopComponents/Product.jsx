@@ -43,5 +43,4 @@ const Product = ({ product, addToCart, loadCurrentItem }) => {
       loadCurrentItem: (item) => dispatch(loadCurrentItem(item)),
     };
   };
-
   export default connect(null, mapDispatchToProps)(Product);
