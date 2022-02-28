@@ -153,8 +153,8 @@ const [cartCount, setCartCount] = useState(0);
             style={{ width: "6vw", height: 40, display: "inline-block" }}
             align="center"
           >
-            <NavLink activeClassName="link1" className="link" to="/product">
-              Product
+            <NavLink activeClassName="link1" className="link" to="/profile">
+              Profile
             </NavLink>
           </div>
           <div
