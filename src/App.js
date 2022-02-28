@@ -9,6 +9,9 @@ import Product from "../src/Components/ShopComponents/Product";
 import ProductDetails from '../src/pages/ProductDetails';
 import { connect } from "react-redux";
 import Cart from "../src/pages/MyCartPage";
+
+import MyAccount from '../src/pages/MyProfilePages/MyAccount'
+
 function App({current}) {
   return (
     <div>
@@ -19,6 +22,7 @@ function App({current}) {
         <Route path="/home" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/profile" element={<MyAccount/>} />
         <Route path="/productDetails/:id" element={!current ? <Navigate to="/" /> : <ProductDetails/>} />
       </Routes>
      
