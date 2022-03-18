@@ -162,7 +162,7 @@ const [cartCount, setCartCount] = useState(0);
             align="center"
           >
             <NavLink activeClassName="link1" className="link" to="/cart">
-              Cart
+            Cart{cartCount}
             </NavLink>
           </div>
           <div
@@ -175,7 +175,7 @@ const [cartCount, setCartCount] = useState(0);
           </div>
           <div>
             {/* <Link to="/cart"><FaShoppingCart  className={"profile icon-hover"}/> */}
-          <div className="cart__counter">{cartCount} cart</div>
+          {/* <div className="cart__counter"> cart</div> */}
           {/* </Link> */}
           
           </div>
