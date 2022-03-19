@@ -11,6 +11,8 @@ import { connect } from "react-redux";
 import Cart from "../src/pages/MyCartPage";
 
 import MyAccount from '../src/pages/MyProfilePages/MyAccount'
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App({current}) {
   return (
@@ -18,7 +20,8 @@ function App({current}) {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/cart" element={<Cart />} />
