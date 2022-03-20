@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, Link } from "react-router-dom";
+// import '../styles/Pages/Login.css'
 
 const Login = () => {
-
-    const [state, setstate] = useState({
-        email:"",
-        password:"",
-    });
-const {email, password}= state;
+  const [state, setstate] = useState({
+    email: "",
+    password: "",
+  });
+  const { email, password } = state;
   const handleGoogleSignIn = () => {};
   const handleSubmit = () => {};
   const handleFBSignIn = () => {};
@@ -16,7 +16,7 @@ const {email, password}= state;
 
   return (
     <div>
-      <div id="logreg-form">
+      <div id="logreg-forms">
         <form className="form-signin" onSubmit={handleSubmit}>
           <h1
             className="h3 mb-3 font-weight-normal"
@@ -32,7 +32,7 @@ const {email, password}= state;
               onclick={handleGoogleSignIn}
             >
               <span>
-                <i className="fab fa-google-plus-g">Sign in with Google+</i>
+                <i className="fab fa-google-plus-g"></i>Sign in with Google+
               </span>
             </button>
             <button
@@ -41,7 +41,7 @@ const {email, password}= state;
               onclick={handleFBSignIn}
             >
               <span>
-                <i className="fab fa-facebook-f">Sign in with FaceBook</i>
+                <i className="fab fa-facebook-f"></i>Sign in with FaceBook
               </span>
             </button>
           </div>
@@ -66,15 +66,20 @@ const {email, password}= state;
             value={password}
             required
           />
-          <button className="btn btn-secondry btn-block" type="submit">Sign in</button>
-<hr/>
-<p>Dont have an Account</p>
-<Link to="/register">
-<button className="btn btn-primary btn-block" type="button" id="btn-signup">
-    <i className="fas fa-user-plus"></i>sign up new account
-</button>
-</Link>
-
+          <button className="btn btn-secondary btn-block" type="submit">
+            Sign in
+          </button>
+          <hr />
+          <p>Dont have an Account</p>
+          <Link to="/register">
+            <button
+              className="btn btn-primary btn-block"
+              type="button"
+              id="btn-signup"
+            >
+              <i className="fas fa-user-plus"></i>sign up new account
+            </button>
+          </Link>
         </form>
       </div>
     </div>
