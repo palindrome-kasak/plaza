@@ -10,8 +10,15 @@ import { connect } from "react-redux";
 // import MyAccountDropDown from "../FixedComponents/MyAccountDropDown";
 // import { store } from "../../redux/Store/store";
 // import SignInPopUp from "../ReusableComponents/SignInPopUp";
+import {firebase} from '../../firebase/firebase'
+
 
 const Nav = ({ cart,user }) => {
+
+const signOut =() =>{
+  firebase.auth().signOut();
+}
+
 //   const strictVisible = props.strictVisible ? true : false;
 //   const [displayed, setIfDisplayed] = useState(false);
 //   const dropdownRef = useRef();
@@ -162,7 +169,7 @@ const [cartCount, setCartCount] = useState(0);
             align="center"
           >
             <NavLink activeClassName="link1" className="link" to="/cart">
-              Cart
+            {cartCount}Cart
             </NavLink>
           </div>
           <div
@@ -175,7 +182,9 @@ const [cartCount, setCartCount] = useState(0);
           </div>
           <div>
             {/* <Link to="/cart"><FaShoppingCart  className={"profile icon-hover"}/> */}
-          <div className="cart__counter">{cartCount} cart</div>
+          <div className="cart__counter"> 
+          <button onClick={signOut} >logOut</button>
+          </div>
           {/* </Link> */}
           
           </div>
