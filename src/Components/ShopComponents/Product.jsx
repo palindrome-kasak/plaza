@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import "../../styles/main.scss";
 import WineGlass from '../../assets/Images/wineGlass.png'
