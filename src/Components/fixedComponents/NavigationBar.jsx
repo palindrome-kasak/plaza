@@ -143,7 +143,7 @@ const [cartCount, setCartCount] = useState(0);
             style={{ width: "6vw", height: 40, display: "inline-block" }}
             align="center"
           >
-            <NavLink activeClassName="link1" className="link" to="/home">
+            <NavLink activeclassname="link1" className="link" to="/home">
               {" "}
               Home
             </NavLink>
@@ -152,7 +152,7 @@ const [cartCount, setCartCount] = useState(0);
             style={{ width: "6vw", height: 40, display: "inline-block" }}
             align="center"
           >
-            <NavLink activeClassName="link1" className="link" to="/shop">
+            <NavLink activeclassname="link1" className="link" to="/shop">
               Shop
             </NavLink>
           </div>
@@ -160,7 +160,7 @@ const [cartCount, setCartCount] = useState(0);
             style={{ width: "6vw", height: 40, display: "inline-block" }}
             align="center"
           >
-            <NavLink activeClassName="link1" className="link" to="/profile">
+            <NavLink activeclassname="link1" className="link" to="/profile">
               Profile
             </NavLink>
           </div>
@@ -168,7 +168,7 @@ const [cartCount, setCartCount] = useState(0);
             style={{ width: "6vw", height: 40, display: "inline-block" }}
             align="center"
           >
-            <NavLink activeClassName="link1" className="link" to="/cart">
+            <NavLink activeclassname="link1" className="link" to="/cart">
             {cartCount}Cart
             </NavLink>
           </div>
@@ -176,7 +176,7 @@ const [cartCount, setCartCount] = useState(0);
             style={{ width: "6vw", height: 40, display: "inline-block" }}
             align="center"
           >
-            {/* <NavLink activeClassName="link1" className="link" to="/shop">
+            {/* <NavLink activeclassname="link1" className="link" to="/shop">
               Shop
             </NavLink> */}
           </div>

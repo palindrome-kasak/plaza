@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import ProductPicture from '../assets/Images/wineGlass.png'
 import { Save, Share } from '../Components/SvgComponents/svgs';

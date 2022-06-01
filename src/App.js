@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "./App.css";
 import React,{useState} from 'react'
 // import NavBar from '../src/Components/NavBar'
